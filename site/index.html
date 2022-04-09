@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>school</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;300;400;500;600;&display=swap');
+*{
+	font-family: 'poppins' sans-serif;
+		margin: 0; padding: 0;
+		box-sizing: border-box;
+		outline: none; border: none;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition: all .2s linear;
+
+}
+
+   section{
+		padding: 5rem 10%;
+	}
+
+	html{
+		font-size: 62.6%;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+		scroll-padding-top:6rem;
+	}
+
+	html::-webkit-scrollbar{
+		width: 1rem;
+	}
+
+	html::-webkit-scrollbar-track{
+		background: #fff;
+	}
+
+	html::-webkit-scrollbar-thumb{
+		background:#d6bd70;
+		border-radius: 5rem;
+	}
+
+
+	nav ul{
+		display: table;
+		text-align: center;
+	}
+	nav ul li a{
+        color: #002e5b;
+        font-size: 18px;
+        padding: 25px 20px;
+        display: inline-block;
+        transition: all 0.5s ease 0s;
+        display: table;
+	}
+
+
+	.heading{
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	text-transform: capitalize;
+	color: #334;
+}
+
+.heading span{
+	color: #d6bd70;
+}
+
+
+	.hidden{
+		display: none;
+	}
+ 
+
+
+
+
+ footer .main-footer{
+   padding: 20px 0;  
+   background: #252525;
+}
+footer ul{ 
+   padding-left: 0;  
+   list-style: none;
+}
+
+.footer-copyright {
+    background: #252525;
+    padding: 5px 0;
+}
+
+.footer-copyright p { 
+	color: #969696; 
+	margin: 2px 0 0;
+	font-size: 4rem;
+}
+
+
+.footer-top{  
+	background: #252525; 
+	padding-bottom: 30px; 
+	margin-bottom: 30px;  
+	border-bottom: 3px solid #222;}
+
+footer.transparent .footer-top, footer.transparent .main-footer{  
+	background: transparent;}
+
+
+footer.transparent .footer-copyright{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
+
+
+footer.light .footer-top{
+ background: #f9f9f9;}
+footer.light .main-footer{  
+	background: #f9f9f9;}
+footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+.widget{  
+	padding: 20px;  
+	margin-bottom: 40px;}
+
+.widget.widget-last{  
+	margin-bottom: 0px;}
+
+.widget.no-box{ padding: 0; background-color: transparent;  margin-bottom: 40px;
+  box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{  
+	margin-bottom: 18px;
+	font-size: 10px;
+}
+
+
+.widget-title {
+	margin-bottom: 20px;
+	font-size: 12px;
+	}
+.widget-title span {
+	background: #d6bd70 none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{ float: right; background: #7f7f7f;}
+
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{  color: #fff;}
+
+.image { 
+   position: relative;
+   width: 100%; 
+   
+}
+
+
+ .image h2{
+ 	 position: absolute; 
+   top: 100px; 
+   left: 30px; 
+   width: 100%;
+	color: #334;
+	font-size: 42px;
+}
+
+ .image p{
+ 	 position: absolute; 
+   top: 150px; 
+   left: 30px; 
+   width: 100%;
+	color: #334;
+	font-size: 15px;
+
+}
+.image .btn{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 1rem 3rem;
+	cursor: pointer;
+	background: #d6bd70;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #334;
+	border: .2rem solid #334;
+	position: absolute; 
+   top:200px; 
+   left: 30px; 
+}
+
+.image .btn:hover{
+	background: #d6bd70;
+	border-color: #d6bd70;
+	color: #fff;
+
+}
+
+
+.image  h4{
+	color: #334;
+	font-size: 23px;
+	padding-top: 12px;
+	position: absolute; 
+   top: 60px; 
+   left: 30px; 
+   width: 100%;
+}
+
+.image .one{
+	 position: absolute; 
+   top: 200px; 
+   left: 30px; 
+   width: 50px;
+}
+
+.back{ 
+	color: white; 
+	background-color:#e5e5e5; 
+	margin: 2px; 
+	font-size: 25px; 
+} 
+
+
+
+
+.flex-container{
+	display: grid;
+	
+	grid-row-gap: 20px;
+	grid-column-gap: 20px
+}
+
+.item{
+	background-color: purple;
+	border: 1px solid #e5e4e9;
+	text-align: left;
+	padding-left: 22px;
+
+
+}
+
+p{
+	font-size: 12px;
+}
+.button {
+  background-color: purple;
+  border: none;
+  color: purple;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  margin: 3px 2px;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color:purple; 
+  color: white; 
+  border: 2px solid #f44336;
+}
+
+ 
+.testimonial{ margin: 0 10px; }
+.testimonial .testimonial-content{
+    margin: 20px 0 50px 0;
+    position: relative;
+}
+.testimonial .testimonial-content:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: 20px ;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+.testimonial .description{
+    padding: 25px 35px;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+.testimonial .description:before,
+.testimonial .description:after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+}
+.testimonial .description:before{
+    content: "\f10d";
+    top: -18px;
+    left: 25px;
+}
+.testimonial .description:after{
+    content: "\f10e";
+    bottom: -18px;
+    right: 25px;
+}
+.testimonial .testimonial-profile{
+    display: table;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    padding-top: 12px;
+}
+.testimonial .title{
+    display: inline-block;
+    margin: 0 0 0 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #dca842;
+    position: relative;
+    top: 22px;
+}
+.testimonial .title:before{
+    content: "";
+    width: 1px;
+    height: 70px;
+    background: #dca842;
+    position: absolute;
+    top: -8px;
+    left: -15px;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    margin-top: 10px;
+}
+.owl-theme .owl-controls{
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: transparent;
+    border: 1px solid #dca842;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #dca842;
+    border: 1px solid #dca842;
+}
+@media only screen and (max-width: 479px){
+    .testimonial .description{
+        padding: 20px;
+        font-size: 16px;
+    }
+    .testimonial .testimonial-profile{ padding: 10px; }
+    .testimonial .title{ font-size: 16px; }
+    .testimonial .post{ font-size: 13px; }
+}
+
+@media screen and (max-width: 1200px){
+	 section{
+		padding: 3rem 5%;
+	}
+}
+
+
+@media screen and (max-width: 991px){
+	html{
+		font-size: 55%;
+	}
+	 section{
+		padding: 5rem 2rem;
+	}
+
+}
+@media screen and (max-width: 768px){
+    
+
+
+}
+
+@media screen and (max-width: 568px){
+	html{
+		font-size: 50%;
+	}
+	
+
+}
+
+@media screen and (max-width: 400px){
+	.navbar-brand{
+		width: 200px;
+	}
+
+}
+
+	</style>
+<body>
+
+
+
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+  <a class="navbar-brand" href="#"><img style="width: 290px" src="logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span style="width: 30px; height: 50px; color: white;" class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  	<br>
+  	<form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+  </form>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">APPLY NOW</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">REQUEST INFO</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        LOGIN
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">UoPeople Portal</a>
+        <a class="dropdown-item" href="#">Online Campus</a>
+      </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ASK A STUDENT</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="#">GIVE</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">VOLUNTEER</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">UOPEOPLE ARABIC</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+
+
+<div class="image">
+      <img style="width: 100%" src="Alex.jpg" alt="" />
+	<h4>A UNIVERSITY THAT</h4>
+	<h2>WORKS FOR YOU</h2>
+	<b><p>Our 100% online, tution-free
+		degree <br>programs are designed to fit your life</p></b>
+
+		<button class="btn" ><b>GET STARTED</b> </button>
+		<img class="one" style="width: 50%; padding-left: 30%;" src="stamp.png" alt="" />
+
+</div>
+
+<section>
+<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<img style="width: 100%" src="twoo.jpg">
+
+</div>
+</section>
+
+	<div class="back">
+	<br> 
+<br></div> 
+
+
+
+<section>
+	<h1 style="font-size: 41px; margin-bottom: 5px; color: #2f2e29 !important; text-align: left;">Quality Meets Online Degree Programs</h1>
+	<p><span class="NormalTextRun SCXW93868980 BCX0">Our academic leadership have created high-quality, affordable programs that will prepare you for success in the job market.</span></p>
+<div class="flex-container">
+	<div class="item">
+		<br>
+
+        <img width="50" height="40" src="Group-360.png" />
+        <br><br>
+<div class="wpb_text_column wpb_content_element  vc_custom_1640270444444">
+<div class="wpb_wrapper">
+<h3  ><a style="color:white;" href="#">BUSINESS ADMINISTRATION </a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1568533060992">
+<div class="wpb_wrapper">
+<p>Students will gain comprehensive knowledge of business theory and practical application in today’s versatile and challenging business world.</p>
+</div>
+</div>
+<button class="button button3">MBA</button>
+<button class="button button3">Bachelor's Degree</button>
+<button class="button button3">Associate's Degree</button>
+<br>
+  
+    </div>
+	<div class="item">
+		<br>
+		<img width="50" height="40" src="Group-427.png">
+		<div class="wpb_text_column wpb_content_element  vc_custom_1640270459996">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">COMPUTER SCIENCE </a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1568533153313">
+<div class="wpb_wrapper">
+<p>Provides the foundation and technical tools required for success in the high-tech industry encompassing both hardware, architecture, and software.</p>
+</div>
+</div>
+<button class="button button3">Master's Degree Bachelor's</button>
+<button class="button button3">Degree Associate's Degree</button>
+ 	<br>
+		</div>
+		<div class="item">
+		<br>
+			<img width="50" height="40" src="Group-430.png">
+			<div class="wpb_text_column wpb_content_element  vc_custom_1640270472715">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">HEALTH SCIENCE</a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1572768052666">
+<div class="wpb_wrapper">
+<p>Gain knowledge, skills, and hands-on experience that are instrumental to working as a health care professional in this complex and evolving industry.</p>
+</div>
+</div>
+<button class="button button3">Bachelor's Degree</button>
+<button class="button button3">Associate's Degree</button>
+<br>
+ 
+		</div>
+	<div class="item">
+		<br>
+		<img idth="50" height="40" src="Group-431.png">
+		<div class="wpb_text_column wpb_content_element  vc_custom_1640270491162">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">EDUCATION</a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1572768535978">
+<div class="wpb_wrapper">
+<p>In collaboration with the IB, our online Master’s Degree Program will help you develop effective skills to become part of the next generation of highly-skilled teachers.</p>
+</div>
+</div>
+<button class="button button3">Master of Education</button>
+<br>
+</div>
+</section>
+
+<section>
+	<h1 class="heading">WHY
+		<span>UOPEOPLE?</span></h1>
+
+</div>	
+
+</div>
+</section>
+
+
+
+
+
+
+<section>
+	<h1 class="heading">OUR ALUMIN
+		<span>WORK AT</span></h1>
+
+		<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<img style="width: 100%;align-items: center;" src="foo.jpg">
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section>
+	<h1 class="heading">FIND OUT
+		<span>MORE</span></h1>
+		<br>
+<div style="display: inline-flex; " class="flex-container">
+
+	<div><img style="width: 160px;" src="1.jpg"></div>
+		<div><img style="width: 160px;" src="2.jpg"></div>
+	<div><img style="width: 160px;" src="3.jpg"></div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="heading">Our Academic 
+		<span>Leadership Team</span></h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="description">
+                            I'm amazed at the resilience,drive and creativity of the students
+                        </p>
+                    </div>
+                    <div class="testimonial-profile">
+                        <div class="pic">
+                            <img src="deansb3.jpg" alt="">
+                        </div>
+                        <h3 class="title">
+                           Dr.Thom Gillespie
+                            <span class="post">computer science instructor, UoPeolpe</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="description">
+                            We are delighted to offer students the world’s most cost-effective programs
+                        </p>
+                    </div>
+                    <div class="testimonial-profile">
+                        <div class="pic">
+                            <img src="deansb2.jpg" alt="">
+                        </div>
+                        <h3 class="title">
+                            David H. Cohen
+                            <span class="post">Provost, UoPeople</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="description">
+                            I am thrilled to be part of this movement
+                        </p>
+                    </div>
+                    <div class="testimonial-profile">
+                        <div class="pic">
+                            <img src="deansb7.jpg" alt="">
+                        </div>
+                        <h3 class="title">
+                          Dr. Claude Steele
+                            <span class="post">Education Advisory Board Member, UoPeople</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="description">
+                           UoPeople is of the highest quality in online education
+                        </p>
+                    </div>
+                    <div class="testimonial-profile">
+                        <div class="pic">
+                            <img src="deansb6.jpg" alt="">
+                        </div>
+                        <h3 class="title">
+                            Dr. Dalton Conley
+                            <span class="post">Dean, Health Science, UoPeople</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1565259818644"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+	<h1 class="heading">Our Academic 
+		<span>Leaders</span></h1>
+</div>
+</div>
+</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<img style="width: 100%" src="picture.jpg">
+
+</div>
+
+
+
+
+
+
+
+
+<footer id="footer" class="footer-1">
+<div class="main-footer widgets-dark typo-light">
+<div class="container">
+<div class="row">
+  
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">Programs<span></span></h5>
+                        <p>Business Administration</p>
+                        <p>Computer Science</p>
+                        <p>Health Science</p>
+                        <p>Education</p>
+                        <p>Associate Degree</p>
+                        <p>Bachelor Degree</p>
+                        <p>Master Degree</p>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">Become a Student<span></span></h5>
+                        <p>Admissions</p>
+                        <p>Undergraduates</p>
+                        <p>Graduate</p>
+                        <p>How to apply</p>
+                        <p>University Documents</p>
+                        <p>Prepare for University</p>
+                        <p>Calendars</p>
+
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">About Us<span></span></h5>
+                        <p>About UoPeople</p>
+                        <p>Leadership</p>
+                        <p>Partners</p>
+                        <p>Administration</p>
+                        <p>UoPeople Blog</p>
+                        <p>Join the People</p>
+
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">Student Experience<span></span></h5>
+                        <p>UoPeople Quality</p>
+                        <p>UoPeople Difference</p>
+                        <p>Student Life</p>
+                        <p>Online Learning Method</p>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">Tuition-Free<span></span></h5>
+                        <p>What is Tuition-Free?</p>
+                        <p>Fees</p>
+                        <p>Our Scholarships</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">Contact Us<span></span></h5>
+                        <p>University Catalog</p>
+                        <p>Jobs</p>
+                        <p>FAQ</p>
+                        <p>Email Preferences</p>
+</div>
+</div>
+
+
+
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<center><p>Copyright © University of the People 2021</p></center>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+
+ $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[990,1],
+        itemsTablet:[768,1],
+        itemsMobile:[650,1],
+        pagination:true,
+        navigation:false,
+        autoPlay:true
+    });
+});
+</script>
+</body>
+</html>
